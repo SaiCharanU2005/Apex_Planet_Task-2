@@ -1,0 +1,225 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #000000, #0f1a1a);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar {
+  background-color: #111;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+.navbar h1 {
+  font-size: 28px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+/* Contact Form */
+.contact-form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #00ffcc;
+  outline: none;
+  box-shadow: 0 0 5px #00ffcc;
+}
+.contact-form button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #00ffcc;
+  border: none;
+  color: black;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #00e6b8;
+}
+
+/* To-Do Section */
+.todo-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#taskInput {
+  flex-grow: 1;
+}
+#addTaskBtn, #prioritySelect {
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+#addTaskBtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+#prioritySelect {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+option {
+  background-color: #111;
+  color: white;
+}
+
+.filter-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.filter-section button {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.filter-section button:hover {
+  background-color: #555;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+.task-checkbox {
+  margin-right: 10px;
+}
+.task-text {
+  flex-grow: 1;
+}
+.task-priority {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-right: 10px;
+  color: white;
+}
+.priority-low {
+  background-color: #4CAF50;
+}
+.priority-medium {
+  background-color: #FFC107;
+}
+.priority-high {
+  background-color: #F44336;
+}
+.delete-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+.stats-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
